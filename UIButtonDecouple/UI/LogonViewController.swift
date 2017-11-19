@@ -7,7 +7,7 @@ protocol Authenticator {
 class LogonViewController: UIViewController {
     let authenticator: Authenticator?
 
-    let logonButton: UIButton!
+    private let logonButton: UIButton!
 
     // MARK: - Initialization
     init(authenticator: Authenticator? = nil) {
