@@ -2,6 +2,13 @@ import Quick
 import Nimble
 @testable import UIButtonDecouple
 
+class AuthenticatorSpy: Authenticator {
+    var logon_wasCalled = false
+    func logon() {
+        logon_wasCalled = true
+    }
+}
+
 class LogonViewControllerSpec: QuickSpec {
     override func spec() {
         describe("the logon screen") {
@@ -10,6 +17,19 @@ class LogonViewControllerSpec: QuickSpec {
 
 
                 expect(logonVC.logonButton.titleLabel?.text).to(equal("Logon"))
+            }
+
+            it("invokes the authentication service when tapping the button") {
+                let authenticatorSpy = AuthenticatorSpy()
+                let logonVC = LogonViewController(
+                    authenticator: authenticatorSpy
+                )
+
+
+                logonVC.logonButton.sendActions(for: .touchUpInside)
+
+
+                expect(authenticatorSpy.logon_wasCalled).to(beTrue())
             }
         }
     }

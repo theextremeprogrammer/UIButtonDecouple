@@ -1,10 +1,14 @@
 import UIKit
 
+protocol Authenticator {
+    func logon()
+}
+
 class LogonViewController: UIViewController {
     let logonButton: UIButton!
 
     // MARK: - Initialization
-    init() {
+    init(authenticator: Authenticator? = nil) {
         logonButton = UIButton(type: .system)
 
         super.init(nibName: nil, bundle: nil)
