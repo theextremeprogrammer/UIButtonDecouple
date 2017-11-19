@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B14E31E7B31E317688E0015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B14EC05188787B85AEC06A9 /* Assets.xcassets */; };
 		3B14E5CFCA97BADAAD82826A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B14E025D591A8C56B9C4BA0 /* AppDelegate.swift */; };
-		521ECD601FC0344400D02457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ECD5F1FC0344400D02457 /* ViewController.swift */; };
 		521ECD801FC109AE00D02457 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ECD7F1FC109AE00D02457 /* main.swift */; };
 		521ECD851FC10A6D00D02457 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521ECD841FC10A6D00D02457 /* PureLayout.framework */; };
-		521ECD8A1FC10B9000D02457 /* WiringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ECD891FC10B9000D02457 /* WiringSpec.swift */; };
 		521ECD8F1FC10C0C00D02457 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521ECD8C1FC10BF700D02457 /* Nimble.framework */; };
 		521ECD901FC10C0C00D02457 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521ECD8B1FC10BF700D02457 /* Quick.framework */; };
 		521ECD911FC10C2000D02457 /* Nimble.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 521ECD8C1FC10BF700D02457 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -51,11 +49,9 @@
 		3B14E5A7F33F54369F84165E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3B14EC05188787B85AEC06A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521ECD5A1FC0344300D02457 /* UIButtonDecouple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButtonDecouple.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		521ECD5F1FC0344400D02457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		521ECD6E1FC0344400D02457 /* UIButtonDecoupleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIButtonDecoupleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		521ECD7F1FC109AE00D02457 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		521ECD841FC10A6D00D02457 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
-		521ECD891FC10B9000D02457 /* WiringSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiringSpec.swift; sourceTree = "<group>"; };
 		521ECD8B1FC10BF700D02457 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		521ECD8C1FC10BF700D02457 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		521ECD951FC10C9000D02457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +102,6 @@
 			children = (
 				521ECD7D1FC1099500D02457 /* Application */,
 				521ECD7E1FC1099500D02457 /* UI */,
-				521ECD5F1FC0344400D02457 /* ViewController.swift */,
 			);
 			path = UIButtonDecouple;
 			sourceTree = "<group>";
@@ -116,7 +111,6 @@
 			children = (
 				521ECD821FC109B200D02457 /* Application */,
 				521ECD811FC109B200D02457 /* UI */,
-				521ECD891FC10B9000D02457 /* WiringSpec.swift */,
 			);
 			path = UIButtonDecoupleTests;
 			sourceTree = "<group>";
@@ -296,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521ECD601FC0344400D02457 /* ViewController.swift in Sources */,
 				521ECD801FC109AE00D02457 /* main.swift in Sources */,
 				3B14E5CFCA97BADAAD82826A /* AppDelegate.swift in Sources */,
 			);
@@ -306,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521ECD8A1FC10B9000D02457 /* WiringSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
