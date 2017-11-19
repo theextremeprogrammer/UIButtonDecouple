@@ -9,10 +9,7 @@ class LogonViewControllerSpec: QuickSpec {
                 let logonVC = LogonViewController()
 
 
-                let logonButton = logonVC.logonButton
-
-
-                expect(logonButton?.titleLabel?.text).to(equal("Logon"))
+                expect(logonVC.logonButton.titleLabel?.text).to(equal("Logon"))
             }
         }
     }
