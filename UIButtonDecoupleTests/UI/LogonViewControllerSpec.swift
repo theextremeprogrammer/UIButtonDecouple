@@ -23,7 +23,7 @@ class LogonViewControllerSpec: QuickSpec {
             }
 
             it("invokes the authentication service when tapping the button") {
-                var logonButton: UIButton? = findButton(inView: logonVC.view, withText: "Logon")
+                let logonButton: UIButton? = logonVC.view.findButton(withText: "Logon")
 
 
                 logonButton?.tap()
@@ -32,18 +32,20 @@ class LogonViewControllerSpec: QuickSpec {
                 expect(authenticatorSpy.logon_wasCalled).to(beTrue())
             }
         }
+    }
+}
 
-        func findButton(inView view: UIView, withText searchText: String) -> UIButton? {
-            for subview in view.subviews {
-                if let button = subview as? UIButton {
-                    if button.titleLabel?.text == searchText {
-                        return button
-                    }
+extension UIView {
+    func findButton(withText searchText: String) -> UIButton? {
+        for subview in subviews {
+            if let button = subview as? UIButton {
+                if button.titleLabel?.text == searchText {
+                    return button
                 }
             }
-
-            return nil
         }
+
+        return nil
     }
 }
 
