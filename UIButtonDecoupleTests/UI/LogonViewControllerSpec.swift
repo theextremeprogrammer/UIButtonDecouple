@@ -12,20 +12,21 @@ class AuthenticatorSpy: Authenticator {
 class LogonViewControllerSpec: QuickSpec {
     override func spec() {
         describe("the logon screen") {
+            var authenticatorSpy: AuthenticatorSpy!
+            var logonVC: LogonViewController!
+
+            beforeEach {
+                authenticatorSpy = AuthenticatorSpy()
+                logonVC = LogonViewController(
+                    authenticator: authenticatorSpy
+                )
+            }
+
             it("displays a logon button") {
-                let logonVC = LogonViewController()
-
-
                 expect(logonVC.logonButton.titleLabel?.text).to(equal("Logon"))
             }
 
             it("invokes the authentication service when tapping the button") {
-                let authenticatorSpy = AuthenticatorSpy()
-                let logonVC = LogonViewController(
-                    authenticator: authenticatorSpy
-                )
-
-
                 logonVC.logonButton.tap()
 
 
