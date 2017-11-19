@@ -26,11 +26,17 @@ class LogonViewControllerSpec: QuickSpec {
                 )
 
 
-                logonVC.logonButton.sendActions(for: .touchUpInside)
+                logonVC.logonButton.tap()
 
 
                 expect(authenticatorSpy.logon_wasCalled).to(beTrue())
             }
         }
+    }
+}
+
+extension UIButton {
+    func tap() {
+        sendActions(for: .touchUpInside)
     }
 }
