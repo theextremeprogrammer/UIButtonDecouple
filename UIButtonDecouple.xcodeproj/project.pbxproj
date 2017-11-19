@@ -16,6 +16,8 @@
 		521ECD911FC10C2000D02457 /* Nimble.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 521ECD8C1FC10BF700D02457 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		521ECD921FC10C2000D02457 /* Quick.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 521ECD8B1FC10BF700D02457 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		521ECD961FC10C9000D02457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521ECD941FC10C9000D02457 /* LaunchScreen.storyboard */; };
+		521ECD981FC10E7600D02457 /* LogonViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ECD971FC10E7600D02457 /* LogonViewControllerSpec.swift */; };
+		521ECD9A1FC110F500D02457 /* LogonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ECD991FC110F500D02457 /* LogonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		521ECD8B1FC10BF700D02457 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		521ECD8C1FC10BF700D02457 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		521ECD951FC10C9000D02457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		521ECD971FC10E7600D02457 /* LogonViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogonViewControllerSpec.swift; sourceTree = "<group>"; };
+		521ECD991FC110F500D02457 /* LogonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		521ECD7E1FC1099500D02457 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				521ECD991FC110F500D02457 /* LogonViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		521ECD811FC109B200D02457 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				521ECD971FC10E7600D02457 /* LogonViewControllerSpec.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521ECD9A1FC110F500D02457 /* LogonViewController.swift in Sources */,
 				521ECD801FC109AE00D02457 /* main.swift in Sources */,
 				3B14E5CFCA97BADAAD82826A /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521ECD981FC10E7600D02457 /* LogonViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
