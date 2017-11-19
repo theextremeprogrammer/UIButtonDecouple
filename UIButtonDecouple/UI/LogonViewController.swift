@@ -28,6 +28,8 @@ class LogonViewController: UIViewController {
 // MARK: - View Setup
 fileprivate extension LogonViewController {
     func configureViews() {
+        view.addSubview(logonButton)
+
         logonButton.setTitle("Logon", for: .normal)
         logonButton.addTarget(
             self,
