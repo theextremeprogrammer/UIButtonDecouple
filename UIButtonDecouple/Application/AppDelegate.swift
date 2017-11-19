@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
-        let viewController = UIViewController()
+        let viewController = LogonViewController()
         viewController.view.backgroundColor = .white
 
         window = UIWindow()

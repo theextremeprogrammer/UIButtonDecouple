@@ -38,6 +38,7 @@ fileprivate extension LogonView {
             action: #selector(didTapLogonButton(sender:)),
             for: .touchUpInside
         )
+        logonButton.autoCenterInSuperview()
     }
 }
 
@@ -76,7 +77,7 @@ fileprivate extension LogonViewController {
 
         logonView.delegate = self
 
-        logonView.autoCenterInSuperview()
+        logonView.autoPinEdgesToSuperviewEdges()
     }
 }
 
