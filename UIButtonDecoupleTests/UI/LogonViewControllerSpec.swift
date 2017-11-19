@@ -48,6 +48,12 @@ extension UIView {
                     return button
                 }
             }
+
+            if subview.subviews.count > 0 {
+                if let button = subview.findButton(withText: searchText) {
+                    return button
+                }
+            }
         }
 
         return nil
