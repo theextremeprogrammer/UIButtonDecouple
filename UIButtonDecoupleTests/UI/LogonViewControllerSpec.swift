@@ -22,10 +22,6 @@ class LogonViewControllerSpec: QuickSpec {
                 )
             }
 
-//            it("displays a logon button") {
-//                expect(logonVC.logonButton.titleLabel?.text).to(equal("Logon"))
-//            }
-
             it("invokes the authentication service when tapping the button") {
                 var logonButton: UIButton? = nil
 
