@@ -22,12 +22,24 @@ class LogonViewControllerSpec: QuickSpec {
                 )
             }
 
-            it("displays a logon button") {
-                expect(logonVC.logonButton.titleLabel?.text).to(equal("Logon"))
-            }
+//            it("displays a logon button") {
+//                expect(logonVC.logonButton.titleLabel?.text).to(equal("Logon"))
+//            }
 
             it("invokes the authentication service when tapping the button") {
-                logonVC.logonButton.tap()
+                var logonButton: UIButton? = nil
+
+                for subview in logonVC.view.subviews {
+                    if let button = subview as? UIButton {
+                        if button.titleLabel?.text == "Logon" {
+                            logonButton = button
+                            break
+                        }
+                    }
+                }
+
+
+                logonButton?.tap()
 
 
                 expect(authenticatorSpy.logon_wasCalled).to(beTrue())
