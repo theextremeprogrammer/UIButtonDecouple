@@ -34,9 +34,9 @@ class LogonViewControllerSpec: QuickSpec {
 
 extension UIViewController {
     func tapButton(withText searchText: String) {
-        if let button = view.findButton(withText: searchText) {
-            button.tap()
-        }
+        view
+            .findButton(withText: searchText)?
+            .tap()
     }
 }
 
