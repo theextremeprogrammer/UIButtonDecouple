@@ -43,12 +43,8 @@ extension UIViewController {
 extension UIView {
     func findButton(withText searchText: String) -> UIButton? {
         return subviews
-            .flatMap { subview -> UIButton? in
-                return subview as? UIButton ?? subview.findButton(withText: searchText)
-            }
-            .filter { button -> Bool in
-                return button.titleLabel?.text == searchText
-            }
+            .flatMap { $0 as? UIButton ?? $0.findButton(withText: searchText) }
+            .filter { $0.titleLabel?.text == searchText }
             .first
     }
 }
